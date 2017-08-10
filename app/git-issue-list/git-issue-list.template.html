@@ -1,0 +1,33 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2">
+      <!--Sidebar content-->
+
+      <p>
+        Search User:
+        <input ng-model="$ctrl.query" />
+      </p>
+
+      <p>
+          gmtDate : {{$ctrl.gmtDate}}<br/>
+          <input type="date" ng-model="$ctrl.gmtDate" datetime-picker date-format="yyyy-MM-dd HH:mm:ss" size="30" />
+      </p>
+
+    </div>
+    <div class="col-md-10">
+      <!--Body content-->
+
+      <ul class="phones">
+        <li ng-repeat="phone in $ctrl.phones | filter:$ctrl.query ">
+          <span>Title : {{phone.title}}</span> </br>
+          <span>Submitted : {{phone.created_at}} </span> </br>
+          <span>Assigned : {{phone.assignee.login}}</span> </br>
+          <span>Submitter : {{phone.user.login}}</span>
+          <p>Issue Details </br><textarea rows="4" cols="150" class="bodylist"> {{phone.body}}</textarea></p>
+        </li>
+        </>
+      </ul>
+
+    </div>
+  </div>
+</div>
