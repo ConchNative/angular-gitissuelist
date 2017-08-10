@@ -1,3 +1,21 @@
+Frontend Level Beyond homework assignment
+
+In order to get spooled up quickly I used the AngularJS Phone Catalog Tutorial Application as a base for the assignment. 
+
+* Tools and Implementation
+  * AngularJS 1.5
+  * npm http server
+
+* Build and Run the application from the angular-gitissuelist path
+  * npm install
+  * npm start
+
+* API
+  * The base URL is http://localhost:8000
+
+It does not look like you need to be logged into GitHub to retrieve data from the api. 
+
+
 # AngularJS Phone Catalog Tutorial Application
 
 
